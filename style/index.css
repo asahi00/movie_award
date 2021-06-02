@@ -1,0 +1,174 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #77c2fb;
+  font-family: 'Noto Sans Japanese', sans-serif;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+}
+
+ul, li {
+  padding: 0;
+  list-style: none;
+  font-size: 1.1rem;
+}
+
+.all_container {
+  position: relative;
+  color: #000;
+}
+
+.hero {
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100vw;
+  overflow: hidden;
+}
+
+.hero .hero_img {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-indent: -9999px;
+}
+
+.con_bg {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/bg_wall.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.content {
+  width: 88%;
+  background: rgba(255, 255, 255, 0.5);
+  margin: auto;
+  padding-bottom: 15rem;
+}
+
+.content h3 {
+  background: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: inherit;
+}
+
+.content p {
+  font-size: 1.1rem;
+  line-height: 2.5;
+  margin: 2rem;
+}
+
+.content dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 1rem;
+  line-height: 2.5;
+  margin: 2rem;
+}
+
+.content dt {
+  width: 19%;
+}
+
+.content dd {
+  width: 67%;
+  padding-bottom: 2rem;
+}
+
+.content .btn_sub {
+  margin: auto;
+  width: 70%;
+}
+
+.content .btn_sub img {
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3rem;
+}
+
+.content .judge h5 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.content .judge .img_shin {
+  width: 55%;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.content .judge img {
+  width: 100%;
+}
+
+.content .award .award_con {
+  margin: 3rem 2rem;
+}
+
+.content .award .hino, .content .award .we {
+  margin-bottom: 2rem;
+}
+
+.content .theatre {
+  width: 90%;
+  margin: auto;
+}
+
+.content .theatre img {
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+}
+
+.content .btn_hp {
+  margin: auto;
+  width: 70%;
+}
+
+.content .btn_hp img {
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3rem;
+}
+
+footer img {
+  width: 38rem;
+  position: absolute;
+  bottom: -50px;
+}
+
+@media print {
+  /******************************************************************
+
+Stylesheet: プリンタのみに適用
+
+******************************************************************/
+}
+/*# sourceMappingURL=index.css.map */
