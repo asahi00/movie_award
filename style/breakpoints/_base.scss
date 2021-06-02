@@ -1,0 +1,165 @@
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+  
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+body{
+  background: $cblue;
+  font-family: 'Noto Sans Japanese', sans-serif;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, p{
+  margin: 0;
+}
+
+ul, li{
+  padding: 0;
+  list-style: none;
+  font-size: 1.1rem;
+}
+
+
+.all_container{
+  position: relative;
+  color: $cBlack;
+}
+
+
+.hero{
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100vw;
+  overflow: hidden;
+
+  .hero_img{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-indent: -9999px;
+  }
+}
+
+.con_bg{
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/bg_wall.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.content{
+  width: 88%;
+  background: rgba(255, 255, 255, 0.5);
+  margin: auto;
+  padding-bottom: 15rem;
+
+  h3{
+    background: $cWhite;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: inherit;
+  }
+
+  p{
+    font-size:1.1rem;
+    line-height: 2.5;
+    margin: 2rem;
+  }
+
+  dl{
+    display: flex;
+    flex-wrap: wrap;
+    font-size:1rem;
+    line-height: 2.5;
+    margin: 2rem;
+  }
+
+  dt{
+    width: 19%;
+  }
+
+  dd{
+    width: 67%;
+    padding-bottom: 2rem;
+  }
+
+  .btn_sub{
+    margin: auto;
+    width: 70%;
+
+    img{
+      width: 100%;
+      align-items: center;
+      margin-bottom: 3rem;
+    }
+  }
+
+  .judge{
+    h5{
+      font-size:2rem;
+      text-align: center;
+    }
+
+    .img_shin{
+      width: 55%;
+      margin: auto;
+      margin-top: 2rem;
+    }
+
+    img{
+      width: 100%;
+    }
+
+  }
+
+  .award{
+    .award_con{
+      margin: 3rem 2rem;
+    }
+
+    .hino, .we{
+      margin-bottom: 2rem;
+    }
+  }
+
+  .theatre{
+    width: 90%;
+    margin: auto;
+
+    img{
+      width: 100%;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .btn_hp{
+    margin: auto;
+    width: 70%;
+
+    img{
+      width: 100%;
+      align-items: center;
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+footer{
+  img{
+    width: 38rem;
+    position: absolute;
+    bottom: -50px;
+  }
+}
