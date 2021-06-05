@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, p {
 }
 
 h4 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -104,7 +104,7 @@ ul, li {
 
 .content h3 {
   background: #fff;
-  font-size: 2rem;
+  font-size: 2.4rem;
   padding: 1rem 0;
   text-align: center;
 }
@@ -147,7 +147,7 @@ ul, li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .content .judge h5 {
@@ -165,11 +165,21 @@ ul, li {
 }
 
 .content .award .award_con {
-  margin: 3rem 2rem;
+  margin: 2rem;
 }
 
-.content .award .hino, .content .award .we {
+.content .award .hita, .content .award .we {
   margin-bottom: 2rem;
+}
+
+.content .award ul {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.content .award .hita_gp, .content .award .hita_au, .content .award .hita_shin, .content .award .hita_sp, .content .award .we_gp, .content .award .we_jud, .content .award .we_shin {
+  margin-bottom: 3rem;
 }
 
 .content .theatre {
@@ -195,7 +205,7 @@ ul, li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 footer .foo_people {
@@ -207,6 +217,80 @@ footer img {
   position: absolute;
   bottom: -60px;
   z-index: 10;
+}
+
+@media (min-width: 749px) {
+  .mv .logo {
+    width: 56vw;
+    top: 8vw;
+  }
+  .mv .hand {
+    width: 46vw;
+    top: 44vw;
+    left: 150px;
+  }
+  .con_bg {
+    margin-top: -30vw;
+    background-position: initial;
+  }
+  .content {
+    max-width: 750px;
+    margin-top: 30vw;
+  }
+  .content h3 {
+    font-size: 3rem;
+  }
+  .content h4, .content h5 {
+    font-size: 2.5rem;
+  }
+  .content p, .content dl {
+    font-size: 2rem;
+    margin: 4rem;
+  }
+  .content .btn_sub img {
+    margin-bottom: 4rem;
+  }
+  .content .judge {
+    max-width: 750px;
+  }
+  .content .judge h5 {
+    text-align: left;
+  }
+  .content .judge p {
+    margin: 1rem 4rem 4rem 1rem;
+  }
+  .content .judge .judge_01 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 4rem;
+  }
+  .content .judge .img_shin {
+    width: 25%;
+    margin: 0 auto;
+  }
+  .content .judge .text {
+    width: 65%;
+  }
+  .content .award .award_con {
+    margin: 4rem;
+  }
+  .content .award ul, .content .award li {
+    font-size: 2rem;
+  }
+  .content .btn_hp img {
+    margin-bottom: 4rem;
+  }
+  .content .contact {
+    margin-bottom: 40vw;
+  }
+  footer img {
+    width: 100vw;
+    bottom: -4vw;
+  }
 }
 
 @media print {
