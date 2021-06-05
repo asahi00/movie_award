@@ -1,0 +1,92 @@
+.mv{
+    .logo{
+        width: 56vw;
+        top: 8vw;
+    }
+
+    .hand{
+        width: 46vw;
+        top: 44vw;
+        left: 150px;
+    }
+}
+
+.con_bg{
+        margin-top: -30vw;
+        background-position: initial;
+}
+
+.content{
+    max-width: 750px;
+    margin-top: 30vw;
+
+    h3{
+        font-size: 3rem;
+    }
+
+    h4, h5{
+        font-size: 2.5rem;
+    }
+
+    p, dl{
+        font-size: 2rem;
+        margin: 4rem;
+    }
+
+    .btn_sub img{
+        margin-bottom: 4rem;
+    }
+
+    .judge{
+        max-width: 750px;
+
+        h5{
+            text-align: left;
+        }
+
+        p{
+            margin: 1rem 4rem 4rem 1rem;
+        }
+
+        .judge_01{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 4rem;
+        }
+
+        .img_shin{
+            width: 25%;
+            margin: 0 auto;
+        }
+
+        .text{
+            width: 65%;
+        }
+    }
+
+    .award{
+
+        .award_con{
+            margin: 4rem;
+        }
+
+        ul, li{
+            font-size: 2rem;
+        }
+    }
+
+    .btn_hp img{
+        margin-bottom: 4rem;
+    }
+
+    .contact{
+        margin-bottom: 40vw;
+    }
+}
+
+footer{
+    img{
+        width: 100vw;
+        bottom: -4vw;
+    }
+}

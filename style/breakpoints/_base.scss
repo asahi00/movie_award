@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, p{
 }
 
 h4{
-  font-size: 1.8rem;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -105,13 +105,13 @@ ul, li{
 
   h3{
     background: #fff;
-    font-size: 2rem;
+    font-size: 2.4rem;
     padding: 1rem 0;
     text-align: center;
   }
 
   p{
-    font-size:1.5rem;
+    font-size: 1.5rem;
     line-height: 2;
     margin: 2rem;
   }
@@ -141,7 +141,7 @@ ul, li{
     img{
       width: 100%;
       align-items: center;
-      margin-bottom: 3rem;
+      margin-bottom: 2rem;
     }
   }
 
@@ -164,11 +164,21 @@ ul, li{
 
   .award{
     .award_con{
-      margin: 3rem 2rem;
+      margin: 2rem;
     }
 
-    .hino, .we{
+    .hita, .we{
       margin-bottom: 2rem;
+    }
+
+    ul{
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .hita_gp, .hita_au, .hita_shin, .hita_sp, .we_gp, .we_jud, .we_shin{
+      margin-bottom: 3rem;
     }
   }
 
@@ -190,7 +200,7 @@ ul, li{
     img{
       width: 100%;
       align-items: center;
-      margin-bottom: 3rem;
+      margin-bottom: 2rem;
     }
   }
 }
