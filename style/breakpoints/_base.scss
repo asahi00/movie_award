@@ -100,7 +100,7 @@ ul, li{
   width: 88%;
   background: rgba(255, 255, 255, 0.7);
   margin: auto;
-  padding-bottom: 15rem;
+  padding-bottom: 25rem;
   margin-top: 25rem;
 
   h3{
@@ -205,15 +205,14 @@ ul, li{
   }
 }
 
-footer{
-  .foo_people{
-    margin: auto;
-  }
+.space{
+  position: relative;
 
   img{
-    width: 38rem;
+    width: 37rem;
     position: absolute;
-    bottom: -60px;
-    z-index: 10;
+    right: 0;
+    left: 0;
+    top: -17rem;
   }
 }

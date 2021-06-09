@@ -1,24 +1,25 @@
 .mv{
     .logo{
-        width: 56vw;
-        top: 8vw;
+        width: 40vw;
+        top: 10vw;
     }
 
     .hand{
-        width: 46vw;
-        top: 44vw;
-        left: 150px;
+        width: 37.5vw;
+        top: 34vw;
+        left: 10vw;
     }
 }
 
 .con_bg{
-        margin-top: -30vw;
+        margin-top: -50vw;
         background-position: initial;
 }
 
 .content{
     max-width: 750px;
-    margin-top: 30vw;
+    margin-top: 35vw;
+    padding-bottom: 60vw;
 
     h3{
         font-size: 3rem;
@@ -79,14 +80,12 @@
         margin-bottom: 4rem;
     }
 
-    .contact{
-        margin-bottom: 40vw;
-    }
 }
 
-footer{
+.space{
+
     img{
         width: 100vw;
-        bottom: -4vw;
+        top: -46vw;
     }
 }
