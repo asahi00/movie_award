@@ -29,7 +29,7 @@ h4 {
 h6 {
   font-size: 1.5rem;
   font-weight: normal;
-  margin: 3rem 0 0 2rem;
+  margin: 3rem 0 0 1rem;
 }
 
 ul, li {
@@ -81,10 +81,9 @@ header .nav_btn #menuToggle {
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  top: -3rem;
+  top: -1rem;
   height: calc(150 / 375 * 100vw);
   width: calc(320 / 375 * 100vw);
-  z-index: 5;
   text-indent: -9999%;
 }
 
@@ -152,7 +151,7 @@ header .nav_btn #menuToggle {
           margin-inline-start: 30px;
 }
 
-.content .about h3 {
+.content #about h3 {
   background-image: url(../img/test_tit.png);
   background-size: calc(220 / 375 * 100vw);
   background-repeat: no-repeat;
@@ -162,7 +161,7 @@ header .nav_btn #menuToggle {
   text-indent: -9999%;
 }
 
-.content .aplly_01 h3 {
+.content #aplly_01 h3 {
   position: relative;
   background-image: url(../img/ap01_tit.png);
   background-size: calc(95 / 375 * 100vw);
@@ -174,7 +173,7 @@ header .nav_btn #menuToggle {
   text-indent: -9999%;
 }
 
-.content .aplly_01 h3::before {
+.content #aplly_01 h3::before {
   bottom: calc(40 / 375 * 100vw);
   left: calc(50 / 375 * 100vw);
   width: calc(70 / 375 * 100vw);
@@ -186,7 +185,7 @@ header .nav_btn #menuToggle {
   background-size: 100%;
 }
 
-.content .aplly_01 h3::after {
+.content #aplly_01 h3::after {
   bottom: calc(-80 / 375 * 100vw);
   left: calc(260 / 375 * 100vw);
   width: calc(80 / 375 * 100vw);
@@ -198,7 +197,7 @@ header .nav_btn #menuToggle {
   background-size: 100%;
 }
 
-.content .aplly_02 h3 {
+.content #aplly_02 h3 {
   position: relative;
   background-image: url(../img/ap02_tit.png);
   background-size: calc(95 / 375 * 100vw);
@@ -210,12 +209,14 @@ header .nav_btn #menuToggle {
   text-indent: -9999%;
 }
 
-.content .aplly_02 p {
+.content #aplly_02 p {
   position: relative;
   text-align: center;
+  font-weight: bold;
+  font-size: 1.4rem;
 }
 
-.content .aplly_02 p::after {
+.content #aplly_02 p::after {
   bottom: calc(-20 / 375 * 100vw);
   left: calc(-10 / 375 * 100vw);
   width: calc(300 / 375 * 100vw);
@@ -227,12 +228,12 @@ header .nav_btn #menuToggle {
   background-size: 100%;
 }
 
-.content .submit {
+.content #aplly_02 .submit {
   margin: auto;
-  width: 100%;
+  width: 80%;
 }
 
-.content .submit img {
+.content #aplly_02 .submit img {
   width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -240,25 +241,30 @@ header .nav_btn #menuToggle {
   margin-bottom: 2rem;
 }
 
-.content .judge h5 {
+.content #judge h5 {
   font-size: 2rem;
   text-align: center;
 }
 
-.content .judge .img_shin {
+.content #judge h6 {
+  font-weight: bold;
+  text-align: center;
+}
+
+.content #judge .img_shin {
   width: 55%;
   margin: 2rem auto;
 }
 
-.content .judge img {
+.content #judge img {
   width: 100%;
 }
 
-.content .judge h3 {
+.content #judge h3 {
   position: relative;
   background-image: url(../img/judge_tit.png);
   background-size: calc(75 / 375 * 100vw);
-  margin-top: calc(60 / 375 * 100vw);
+  margin-top: calc(0 / 375 * 100vw);
   background-repeat: no-repeat;
   background-position: center;
   padding-bottom: calc(10 / 375 * 100vw);
@@ -266,11 +272,11 @@ header .nav_btn #menuToggle {
   text-indent: -9999%;
 }
 
-.content .judge .judge_01, .content .judge .judge_02, .content .judge .judge_03 {
+.content #judge .judge_01, .content #judge .judge_02, .content #judge .judge_03 {
   margin-bottom: 5rem;
 }
 
-.content .award h3 {
+.content #award h3 {
   position: relative;
   background-image: url(../img/award_tit.png);
   background-size: calc(100 / 375 * 100vw);
@@ -282,7 +288,7 @@ header .nav_btn #menuToggle {
   text-indent: -9999%;
 }
 
-.content .award h3::before {
+.content #award h3::before {
   bottom: calc(40 / 375 * 100vw);
   left: calc(90 / 375 * 100vw);
   width: calc(50 / 375 * 100vw);
@@ -294,7 +300,7 @@ header .nav_btn #menuToggle {
   background-size: 100%;
 }
 
-.content .award h3::after {
+.content #award h3::after {
   bottom: calc(-60 / 375 * 100vw);
   left: calc(220 / 375 * 100vw);
   width: calc(150 / 375 * 100vw);
@@ -306,18 +312,18 @@ header .nav_btn #menuToggle {
   background-size: 100%;
 }
 
-.content .award .hita, .content .award .we {
+.content #award .hita, .content #award .we {
   margin-bottom: 2rem;
 }
 
-.content .award .hita_gp, .content .award .hita_au, .content .award .hita_shin, .content .award .hita_sp, .content .award .we_gp, .content .award .we_jud, .content .award .we_shin {
+.content #award .hita_gp, .content #award .hita_au, .content #award .hita_shin, .content #award .hita_sp, .content #award .we_gp, .content #award .we_jud, .content #award .we_shin {
   margin-bottom: 3rem;
 }
 
-.content .movie h3 {
+.content #movie h3 {
   position: relative;
   background-image: url(../img/movie_tit.png);
-  background-size: calc(80 / 375 * 100vw);
+  background-size: calc(240 / 375 * 100vw);
   margin-top: calc(60 / 375 * 100vw);
   background-repeat: no-repeat;
   background-position: center;
@@ -326,11 +332,11 @@ header .nav_btn #menuToggle {
   text-indent: -9999%;
 }
 
-.content .movie h3::before {
-  bottom: 0;
-  left: calc(60 / 375 * 100vw);
-  width: calc(45 / 375 * 100vw);
-  height: calc(80 / 375 * 100vw);
+.content #movie h3::before {
+  top: calc( 0/ 375*100vw);
+  left: calc(0 / 375 * 100vw);
+  width: calc(35 / 375 * 100vw);
+  height: calc(60 / 375 * 100vw);
   background: url(../img/corn.png);
   position: absolute;
   content: "";
@@ -338,11 +344,11 @@ header .nav_btn #menuToggle {
   background-size: 100%;
 }
 
-.content .movie h3::after {
-  bottom: 0;
-  left: calc(230 / 375 * 100vw);
-  width: calc(45 / 375 * 100vw);
-  height: calc(80 / 375 * 100vw);
+.content #movie h3::after {
+  top: calc( 0/ 375*100vw);
+  left: calc(295 / 375 * 100vw);
+  width: calc(35 / 375 * 100vw);
+  height: calc(60 / 375 * 100vw);
   background: url(../img/juice.png);
   position: absolute;
   content: "";
@@ -350,12 +356,12 @@ header .nav_btn #menuToggle {
   background-size: 100%;
 }
 
-.content .movie .theatre {
+.content #movie .theatre {
   width: 90%;
   margin: auto;
 }
 
-.content .movie .theatre img {
+.content #movie .theatre img {
   width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -363,12 +369,12 @@ header .nav_btn #menuToggle {
   margin-bottom: 2rem;
 }
 
-.content .movie .btn_hp {
+.content #movie .btn_hp {
   margin: auto;
   width: 60%;
 }
 
-.content .movie .btn_hp img {
+.content #movie .btn_hp img {
   width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -376,7 +382,7 @@ header .nav_btn #menuToggle {
   margin-bottom: 2rem;
 }
 
-.content .contact h3 {
+.content #contact h3 {
   position: relative;
   background-image: url(../img/contact_tit.png);
   background-size: calc(140 / 375 * 100vw);
@@ -388,11 +394,11 @@ header .nav_btn #menuToggle {
   text-indent: -9999%;
 }
 
-.content .contact h3::before {
+.content #contact h3::before {
   display: none;
 }
 
-.content .contact h3::after {
+.content #contact h3::after {
   display: none;
 }
 
@@ -603,6 +609,7 @@ a:visited, a:hover, a:active {
   margin: 0 auto;
   padding: 0;
   list-style: none;
+  color: #fff;
 }
 
 .menu .sns {
@@ -655,47 +662,94 @@ a:visited, a:hover, a:active {
 }
 
 @media (min-width: 749px) {
+  header .menucont li {
+    font-size: 2.5rem;
+  }
+  .mv {
+    height: calc(720/1080*100vw);
+  }
+  .mv .kaisai h3 {
+    margin: auto;
+    width: calc(500/1080*100vw);
+    top: calc(-110/1080*100vw);
+    left: 0;
+    right: 0;
+  }
   .mv .logo {
-    width: 40vw;
-    top: 10vw;
+    width: calc(550/1080*100vw);
+    top: calc(210/1080*100vw);
   }
-  .mv .hand {
-    width: 37.5vw;
-    top: 34vw;
-    left: 10vw;
-  }
-  .con_bg {
-    margin-top: -50vw;
-    background-position: initial;
+  .mv h1::after {
+    width: calc(190 / 1080 * 100vw);
+    height: calc(190 / 1080 * 100vw);
+    left: calc(450 / 1080 * 100vw);
+    bottom: calc(-120 / 1080 * 100vw);
   }
   .content {
-    max-width: 750px;
-    margin-top: 35vw;
-    padding-bottom: 60vw;
+    max-width: calc(750/1080*100vw);
+    margin-top: 0;
+    padding-bottom: calc(80/1080*100vw);
   }
   .content h3 {
-    font-size: 3rem;
+    padding-bottom: 0;
   }
-  .content h4, .content h5 {
+  .content h4, .content h5, .content h6 {
     font-size: 2.5rem;
   }
   .content p, .content dl {
-    font-size: 2rem;
-    margin: 4rem;
+    font-size: 2.5rem;
+    margin: 0 4rem 4rem 4rem;
   }
   .content .btn_sub img {
     margin-bottom: 4rem;
   }
-  .content .judge {
-    max-width: 750px;
+  .content #about h3 {
+    background-size: calc(450 / 1080 * 100vw);
   }
-  .content .judge h5 {
-    text-align: left;
+  .content #aplly_01 h3 {
+    background-size: calc(180/1080*100vw);
+    margin-top: calc(100/1080*100vw);
   }
-  .content .judge p {
-    margin: 1rem 4rem 4rem 1rem;
+  .content #aplly_01 h3::before {
+    bottom: calc(100/1080*100vw);
+    left: calc(160/1080*100vw);
+    width: calc(120/1080*100vw);
+    height: calc(60/1080*100vw);
   }
-  .content .judge .judge_01 {
+  .content #aplly_01 h3::after {
+    bottom: calc(-190 / 1080 * 100vw);
+    left: calc(600 / 1080 * 100vw);
+    width: calc(140 / 1080 * 100vw);
+    height: calc(330 / 1080 * 100vw);
+  }
+  .content #aplly_02 h3 {
+    background-size: calc(180 / 1080 * 100vw);
+    padding-top: calc(120 / 1080 * 100vw);
+  }
+  .content #aplly_02 p {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .content #aplly_02 p::after {
+    left: calc(-10/1080*100vw);
+    bottom: calc(-50/1080*100vw);
+    width: calc(600/1080*100vw);
+    height: calc(130/1080*100vw);
+  }
+  .content #aplly_02 .submit {
+    margin-top: calc(60/1080*100vw);
+  }
+  .content #judge h3 {
+    background-size: calc(150/1080*100vw);
+    margin-top: calc(100/1080*100vw);
+  }
+  .content #judge h5 {
+    font-size: 4rem;
+  }
+  .content #judge h6 {
+    font-size: 4rem;
+  }
+  .content #judge .judge_01, .content #judge .judge_02 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -704,25 +758,51 @@ a:visited, a:hover, a:active {
             justify-content: space-between;
     margin-top: 4rem;
   }
-  .content .judge .img_shin {
+  .content #judge .img_shin {
     width: 25%;
     margin: 0 auto;
   }
-  .content .judge .text {
+  .content #judge .text {
     width: 65%;
   }
-  .content .award .award_con {
-    margin: 4rem;
+  .content #award h3 {
+    background-size: calc(180/1080*100vw);
+    padding-top: calc(100/1080*100vw);
   }
-  .content .award ul, .content .award li {
-    font-size: 2rem;
+  .content #award h3::before {
+    bottom: calc(100/1080*100vw);
+    left: calc(180/1080*100vw);
+    width: calc(100/1080*100vw);
+    height: calc(90/1080*100vw);
   }
-  .content .btn_hp img {
-    margin-bottom: 4rem;
+  .content #award h3::after {
+    bottom: calc(-80/1080*100vw);
+    left: calc(530 / 1080 * 100vw);
+    width: calc(300/1080*100vw);
+    height: calc(320/1080*100vw);
   }
-  .space img {
-    width: 100vw;
-    top: -50vw;
+  .content #movie h3 {
+    background-size: calc(550/1080*100vw);
+  }
+  .content #movie h3::before {
+    left: calc(0/1080*100vw);
+    width: calc(80/1080*100vw);
+    height: calc(130/1080*100vw);
+  }
+  .content #movie h3::after {
+    left: calc(670/1080*100vw);
+    width: calc(80/1080*100vw);
+    height: calc(130/1080*100vw);
+  }
+  .content #contact h3 {
+    background-size: calc(250/1080*100vw);
+    margin-top: calc(100/1080*100vw);
+  }
+  footer .con::before {
+    left: calc(600/1080*100vw);
+    width: calc(300/1080*100vw);
+    height: calc(370/1080*100vw);
+    bottom: calc(100/1080*100vw);
   }
 }
 

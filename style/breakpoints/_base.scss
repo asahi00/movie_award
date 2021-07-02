@@ -29,7 +29,7 @@ h4{
 h6{
   font-size: 1.5rem;
   font-weight: normal;
-  margin: 3rem 0 0 2rem;
+  margin: 3rem 0 0 1rem;
 }
 
 ul, li{
@@ -81,10 +81,9 @@ header{
       background-size: 100%;
       background-repeat: no-repeat;
       background-position: center;
-      top: -3rem;
+      top: -1rem;
       height: calc(150 / 375 * 100vw);
       width: calc(320 / 375 * 100vw);
-      z-index: 5;
       text-indent: -9999%;
     }
   }
@@ -164,7 +163,7 @@ header{
     background-size: 100%;
   }
 
-  .about{
+  #about{
     h3{
       background-image: url(../img/test_tit.png);
       background-size: calc(220 / 375 * 100vw);
@@ -172,7 +171,7 @@ header{
     }
   }
 
-  .aplly_01{
+  #aplly_01{
     h3{
       position: relative;
       background-image: url(../img/ap01_tit.png);
@@ -200,7 +199,7 @@ header{
     }
   }
 
-  .aplly_02{
+  #aplly_02{
     h3{
       position: relative;
       background-image: url(../img/ap02_tit.png);
@@ -212,6 +211,8 @@ header{
     p{
       position: relative;
       text-align: center;
+      font-weight: bold;
+      font-size: 1.4rem;
     }
 
     p::after{
@@ -222,22 +223,27 @@ header{
       background: url(../img/pencil.png);
       @include absolute;
     }
-  }
 
-  .submit{
-    margin: auto;
-    width: 100%;
+    .submit{
+      margin: auto;
+      width: 80%;
 
-    img{
-      width: 100%;
-      align-items: center;
-      margin-bottom: 2rem;
+      img{
+        width: 100%;
+        align-items: center;
+        margin-bottom: 2rem;
+      }
     }
   }
 
-  .judge{
+  #judge{
     h5{
       font-size:2rem;
+      text-align: center;
+    }
+
+    h6{
+      font-weight: bold;
       text-align: center;
     }
 
@@ -254,7 +260,7 @@ header{
       position: relative;
       background-image: url(../img/judge_tit.png);
       background-size: calc(75 / 375 * 100vw);
-      margin-top: calc(60 / 375 * 100vw);
+      margin-top: calc(0 / 375 * 100vw);
       @include title;
     }
 
@@ -264,7 +270,7 @@ header{
 
   }
 
-  .award{
+  #award{
     h3{
       position: relative;
       background-image: url(../img/award_tit.png);
@@ -300,29 +306,29 @@ header{
     }
   }
 
-  .movie{
+  #movie{
     h3{
       position: relative;
       background-image: url(../img/movie_tit.png);
-      background-size: calc(80 / 375 * 100vw);
+      background-size: calc(240 / 375 * 100vw);
       margin-top: calc(60 / 375 * 100vw);
       @include title;
     }
 
     h3::before{
-      bottom: 0;
-      left: calc(60 / 375 * 100vw);
-      width: calc(45 / 375 * 100vw);
-      height: calc(80 / 375 * 100vw);
+      top: calc( 0/ 375*100vw);
+      left: calc(0 / 375 * 100vw);
+      width: calc(35 / 375 * 100vw);
+      height: calc(60 / 375 * 100vw);
       background: url(../img/corn.png);
       @include absolute;
     }
 
     h3::after{
-      bottom: 0;
-      left: calc(230 / 375 * 100vw);
-      width: calc(45 / 375 * 100vw);
-      height: calc(80 / 375 * 100vw);
+      top: calc( 0/ 375*100vw);
+      left: calc(295 / 375 * 100vw);
+      width: calc(35 / 375 * 100vw);
+      height: calc(60 / 375 * 100vw);
       background: url(../img/juice.png);
       @include absolute;
     }
@@ -350,7 +356,7 @@ header{
   }
   }
 
-  .contact{
+  #contact{
     h3{
       position: relative;
       background-image: url(../img/contact_tit.png);

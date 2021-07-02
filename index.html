@@ -7,6 +7,22 @@
     <title>壁を打ち破るのは君だ! HITA 学生映像祭</title>
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/index.css">
+
+    <!-- ファビコン -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#80daff">
+    <meta name="theme-color" content="#80daff">
+
+    <!-- Twitter_OGP -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="壁を打ち破るのは君だ! HITA 学生映像祭">
+    <meta name="twitter:description" content=" 壁を打ち破るのは君だ! HITA 学生映像祭 Websiteです。">
+    <meta name="twitter:image" content="https://asahi00.github.io/movie_award//img/OGP.png">
+    <meta itemprop="image" content="https://asahi00.github.io/movie_award//img/OGP.png">
 </head>
 <body>
     <!-- JQueryで読み込み -->
@@ -26,11 +42,15 @@
             <label for="menuToggle"></label>
         <div class="menucont">
             <ul>
-                <li><a href="#home" onclick="$('input').prop('checked', false)">HOME</a></li>
-                <li><a href="#about" onclick="$('input').prop('checked', false)">ABOUT</a></li>
-                <li><a href="#news" onclick="$('input').prop('checked', false)">NEWS</a></li>
-                <li><a href="#work" onclick="$('input').prop('checked', false)">WORK</a></li>
-                <li><a href="#contact" onclick="$('input').prop('checked', false)">CONTACT</a></li>
+                <li><a href="#about" onclick="$('input').prop('checked', false)">HITA学生映画祭とは？</a></li>
+                <li><a href="#aplly_01" onclick="$('input').prop('checked', false)">応募条件</a></li>
+                <li><a href="#aplly_02" onclick="$('input').prop('checked', false)">応募期間</a></li>
+                <li><a href="#judge" onclick="$('input').prop('checked', false)">審査員</a></li>
+                <li><a href="#award" onclick="$('input').prop('checked', false)">受賞内容</a></li>
+                <li><a href="#movie" onclick="$('input').prop('checked', false)">HITA学生映像祭アワード</a></li>
+                <li><a href="#contact" onclick="$('input').prop('checked', false)">お問い合わせ</a></li>
+
+
             </ul>
         </div>
         </div>
@@ -48,18 +68,13 @@
     </div>
 
         <div class="content">
-            <div class="about">
+            <div id="about">
                 <h3>HITA学生映像祭とは？</h3>
-                <p>今年の日田市で行われる「みんなの祭り」では映像コンペを
-                    開催します！ 応募された作品の中から最大15作品を選出し、
-                    「パトリア発みんなの祭2021」にて大ホールでHITA学生映像祭アワードを開催。
-                    上映会には、映画感想Tiktokクリエイターしんのすけや豪華
-                    ゲストや審査員準備中！上映作品の中から全国部門での賞や、
-                    観客賞を選出。特別賞も多数ご用意！
+                <p>今年の日田市で行われる「みんなの祭り」では映像コンペを開催します！ 応募された作品の中から最大15作品を選出し、「パトリア発みんなの祭2021」にて大ホールでHITA学生映像祭アワードを開催。上映会には、映画感想Tiktokクリエイターしんのすけや豪華ゲストや審査員準備中！上映作品の中から全国部門での賞や、観客賞を選出。特別賞も多数ご用意！
                 </p>
             </div>
 
-            <div class="aplly_01">
+            <div id="aplly_01">
                 <h3>応募条件</h3>
                 <p>○対象・・・全国の学生<br>
                 ※個人・グループ問わず。<br>
@@ -76,16 +91,18 @@
                 </p>
             </div>
 
-            <div class="aplly_02">
+            <div id="aplly_02">
                 <h3>応募期間</h3>
                 <p>2021年8月15日まで（23:59必着！）</p>
-                <a href="#" target="_blank">
-                    <img class="submit" src="img/submit.png" alt="応募フォーム">
-                </a>
+                <div class="submit">
+                    <a href="#" target="_blank">
+                        <img src="img/submit.png" alt="応募フォーム">
+                    </a>
+                </div>
                 
             </div>
             
-            <div class="judge">
+            <div id="judge">
                 <h3>審査員</h3>
                 <div class="judge_01">
                     <div class="img_shin">
@@ -112,7 +129,7 @@
                 </div>
             </div>
 
-            <div class="award">
+            <div id="award">
                 <h3>受賞内容</h3>
                 <div class="award_con">
 
@@ -173,7 +190,7 @@
                 </div>
             </div>
 
-            <div class="movie">
+            <div id="movie">
                 <h3>上映会</h3>
                 <dl>
                     <dt>会場…</dt>
@@ -197,7 +214,7 @@
                 </div>
             </div>
 
-            <div class="contact">
+            <div id="contact">
                 <h3>お問い合わせ先</h3>
                 <p>日田市民文化会館「パトリア日田」<br>
                     〒877-0016　大分県日田市三本松一丁目8番11号<br>
@@ -221,7 +238,8 @@
                     <img src="img/insta.png">
                 </a>
             </ul>
-            <p>主催・パトリア日田/株式会社POPBORN</p>
+            <p>主催<br>
+                パトリア日田/株式会社POPBORN</p>
             <div class="logo">
                 <div class="hita">
                     <a href="https://www.patria-hita.jp/" target="_blank">
