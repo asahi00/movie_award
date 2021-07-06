@@ -9,7 +9,6 @@ html {
     box-sizing: border-box;
 }
 
-@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 body{
   background: $cblue;
   font-family: 'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
@@ -82,8 +81,8 @@ header{
       background-repeat: no-repeat;
       background-position: center;
       top: -1rem;
-      height: calc(150 / 375 * 100vw);
-      width: calc(320 / 375 * 100vw);
+      height: calc(120 / 375 * 100vw);
+      width: calc(240 / 375 * 100vw);
       text-indent: -9999%;
     }
   }
@@ -104,15 +103,35 @@ header{
     background-repeat: no-repeat;
     background-image: url(../img/otouto.png);
     background-size: 100%;
-    width: calc(120 / 375 * 100vw);
-    height: calc(120 / 375 * 100vw);
-    left: calc(160 / 375 * 100vw);
-    bottom: calc(-100 / 375 * 100vw);
+    width: calc(90 / 375 * 100vw);
+    height: calc(100 / 375 * 100vw);
+    left: calc(190 / 375 * 100vw);
+    bottom: calc(-49 / 375 * 100vw);
   }
 
   img{
     display: block;
     width: 100%;
+    margin-top: -5rem;
+  }
+
+  .tit_pop{
+    display: flex;
+    display:-webkit-box;
+  	display:-ms-flexbox;
+    margin: auto 0;
+    margin-top: calc(280/375*100vw);
+    justify-content: center;
+
+    img{
+      width: calc(78/375*100vw);
+      margin-right: 1rem;
+    }
+  }
+
+  .under_tit{
+    width: calc(373/375*100vw);
+    margin-top: calc(70/375*100vw);
   }
 }
 
@@ -121,8 +140,8 @@ header{
   width: 88%;
   background: rgba(255, 255, 255, 0.6);
   margin: auto;
-  padding-bottom: 4rem;
-  top: 8rem;
+  padding-bottom: calc(60/375*100vw);
+  top: calc(220/375*100vw);
 
   p{
     font-size: 1.3rem;
@@ -139,11 +158,11 @@ header{
   }
 
   dt{
-    width: 16%;
+    width: 19%;
   }
 
   dd{
-    width: 71%;
+    width: 63%;
     padding-bottom: 2rem;
     margin-inline-start: 30px;
   }
@@ -199,6 +218,16 @@ header{
     }
   }
 
+  #aplly_015{
+    h3{
+      position: relative;
+      background-image: url(../img/ap15_tit.png);
+      background-size: calc(98 / 375 * 100vw);
+      margin-top: calc(30 / 375 * 100vw);
+      @include title;
+    }
+  }
+
   #aplly_02{
     h3{
       position: relative;
@@ -225,13 +254,49 @@ header{
     }
 
     .submit{
-      margin: auto;
-      width: 80%;
+      margin: 4rem auto;
+      width: 26.8rem;
 
-      img{
+
+      a {
+        position: relative;
+        color: #fff;
+        font-size: 2.7rem;
+        font-weight: bold;
+        background: #ff7176;
+        padding: 1rem 8rem;
+        border-radius: 60px;
+        z-index: 1;
+        display: inline-block;
+        -webkit-transition: .3s;
+        transition: .3s;
+        margin: 0 auto;
+      }
+
+      a::before {
+        content: "";
+        position: absolute;
         width: 100%;
-        align-items: center;
-        margin-bottom: 2rem;
+        height: 100%;
+        top: 0;
+        left: 0;
+        border: 3px solid #ff7176;
+        border-radius: 60px;
+        box-sizing: border-box;
+        z-index: -1;
+        transform: scale(1);
+        opacity: 0;
+        transition: transform ease .3s, opacity .3s;
+      }
+
+      a:hover {
+        color: $cpink;
+        background: transparent;
+      }
+      
+      a:hover::before {
+        transform: scale(1);
+        opacity: 1;
       }
     }
   }
@@ -346,12 +411,47 @@ header{
 
   .btn_hp{
     margin: auto;
-    width: 60%;
+    width: 28.2rem;
 
-    img{
+    a {
+      position: relative;
+      color: #fff;
+      font-size: 2rem;
+      font-weight: bold;
+      background: #ff7176;
+      padding: 1rem 4rem;
+      border-radius: 70px;
+      z-index: 1;
+      display: inline-block;
+      -webkit-transition: .3s;
+      transition: .3s;
+      margin: 0 auto;
+    }
+
+    a::before {
+      content: "";
+      position: absolute;
       width: 100%;
-      align-items: center;
-      margin-bottom: 2rem;
+      height: 100%;
+      top: 0;
+      left: 0;
+      border: 3px solid #ff7176;
+      border-radius: 60px;
+      box-sizing: border-box;
+      z-index: -1;
+      transform: scale(1);
+      opacity: 0;
+      transition: transform ease .3s, opacity .3s;
+    }
+
+    a:hover {
+      color: $cpink;
+      background: transparent;
+    }
+    
+    a:hover::before {
+      transform: scale(1);
+      opacity: 1;
     }
   }
   }
@@ -376,29 +476,36 @@ header{
 }
 
 footer{
-  margin-top: 13rem;
+  margin-top: calc(260/375*100vw);
 
   .con{
     margin-top: 3rem;
-    height: 32rem;
+    height: 42rem;
     background-color: $cpink;
   }
 
-  .con::before{
+  h3{
+    position: relative;
+    text-indent: -9999px;
+  }
+
+  h3::before{
     position: absolute;
     content: "";
     background: url(../img/niisan.png);
     background-size: 100%;
     background-repeat: no-repeat;
-    left: calc(200 / 375 * 100vw);
-    width: calc(150 / 375 * 100vw);
-    height: calc(190 / 375 * 100vw);
-    bottom: calc(280 / 375 * 100vw);
+    left: calc(180 / 375 * 100vw);
+    width: calc(170 / 375 * 100vw);
+    height: calc(210 / 375 * 100vw);
+    top: calc(-150 / 375 * 100vw);
   }
 
   .sns{
     position: relative;
     display: flex;
+    display:-webkit-box;
+  	display:-ms-flexbox;
     align-items: center;
     margin: auto;
     justify-content: center;
@@ -411,6 +518,9 @@ footer{
   p{
     text-align: center;
     font-size: 1.3rem;
+    line-height: 2.5rem;
+    margin: 3rem 0;
+
   }
 
   .logo{
